@@ -1,0 +1,11 @@
+memot
+https://qiita.com/tonkotsuboy_com/items/5322d226b6783d25b5df
+自動でNode.jsのバージョンを切り替えるnodenv
+https://pleiades.io/help/idea/auto-completing-code.html#code_completion_settings
+
+https://github.com/vscodejp/handson-hello-vscode
+
+仮想マシンにDockerをインストール
+https://genchan.net/it/virtualization/docker/18314/
+[root@localhost lii]# docker --version
+Docker version 20.10.9, build c2ea9bc
