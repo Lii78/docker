@@ -1,4 +1,8 @@
-memot
+memo
+
+https://www.vmware.com/jp/products/workstation-player/workstation-player-evaluation.html
+http://isoredirect.centos.org/centos/8/isos/x86_64/
+
 https://qiita.com/tonkotsuboy_com/items/5322d226b6783d25b5df
 自動でNode.jsのバージョンを切り替えるnodenv
 https://pleiades.io/help/idea/auto-completing-code.html#code_completion_settings
