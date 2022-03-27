@@ -1,0 +1,22 @@
+pi@raspberrypi:~ $ docker --version
+Docker version 20.10.14, build a224086
+pi@raspberrypi:~ $ cd /temp/work
+-bash: cd: /temp/work: そのようなファイルやディレクトリはありません
+pi@raspberrypi:~ $  docker run -v /tmp/work:/tmp/work -it kaizenjapan/zdd /bin/bash
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+pi@raspberrypi:~ $ sudo cd /temp/work
+sudo: cd: コマンドが見つかりません
+pi@raspberrypi:~ $ sudo docker run -v /tmp/work:/tmp/work -it kaizenjapan/zdd /bin/bash
+Unable to find image 'kaizenjapan/zdd:latest' locally
+latest: Pulling from kaizenjapan/zdd
+7413c47ba209: Pull complete
+0fe7e7cbb2e8: Pull complete
+1d425c982345: Pull complete
+344da5c95cec: Pull complete
+47e4873892bd: Pull complete
+276ac9b84025: Pull complete
+Digest: sha256:8fc92273c3d5baf818043706d14c67463cb58a005f01f48f7b966b7505672f19
+Status: Downloaded newer image for kaizenjapan/zdd:latest
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm/v7) and no specific platform was requested
+standard_init_linux.go:228: exec user process caused: exec format error
