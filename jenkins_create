@@ -1,0 +1,29 @@
+OS :Windows10
+
+C:\Users\Owner>docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-jdk11
+Unable to find image 'jenkins/jenkins:lts-jdk11' locally
+lts-jdk11: Pulling from jenkins/jenkins
+93c2d578e421: Already exists
+82eb791f1e55: Pull complete
+5d6561b893fc: Pull complete
+f452b29de875: Pull complete
+8e143e896634: Pull complete
+70d24d22f6e7: Pull complete
+99cdc8682f2f: Pull complete
+f05b84f61353: Pull complete
+9ee59605167b: Pull complete
+b848888a376b: Pull complete
+eabb8e9fa475: Pull complete
+bee7451ff081: Pull complete
+7f720ce1df9a: Pull complete
+Digest: sha256:2da4de0918e5133c04e255b835c12d7790735183bc21032a1f08b3e398f48840
+Status: Downloaded newer image for jenkins/jenkins:lts-jdk11
+9798444c65a6a7f56996b43fc05082237c092531f57adba7a179ae88d6af95c6
+
+C:\Users\Owner>docker ps
+CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS                                              NAMES
+9798444c65a6   jenkins/jenkins:lts-jdk11   "/usr/bin/tini -- /u…"   2 minutes ago   Up 2 minutes   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   bold_chaplygin
+
+C:\Users\Owner>
+
+$ cat /var/jenkins_home/secrets/initialAdminPassword
