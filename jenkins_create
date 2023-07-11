@@ -27,3 +27,9 @@ CONTAINER ID   IMAGE                       COMMAND                  CREATED     
 C:\Users\Owner>
 
 $ cat /var/jenkins_home/secrets/initialAdminPassword
+
+http://localhost:8080/
+
+ログインするには、ユーザー名「admin」と、セットアップウィザードへのアクセスに使用した管理者パスワードを使用します。
+
+
